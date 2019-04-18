@@ -1,0 +1,26 @@
+import java.io.File;
+import java.io.FileReader;
+
+public class Main {
+    public static void main(String[] args) {
+//        try{
+////            protected code
+//            File file = new File("D://namafile.txt");
+//            FileReader fr = new FileReader(file);
+//        }catch (Exception e){
+////            Catch block
+//            System.out.println(e.getMessage());
+//        }
+//    }
+        try {
+//            Mencoba membaca berkas latihan.txt
+            File file = new File("D://latihan.txt");
+            FileReader fr = new FileReader(file);
+            // Jika berhasil maka tampilkan pesan
+            System.out.println("Read file berhasil");
+        }catch (Exception e){
+            // Jika terjadi kesalahan maka tampilkan pesan
+            System.out.println(e.getMessage());
+        }
+        }
+}
